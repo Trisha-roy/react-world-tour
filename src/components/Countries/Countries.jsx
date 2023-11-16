@@ -29,11 +29,11 @@ const countries = () => {
             <h3>Total Country: {countries.length}</h3>
             <div>
                 <h3>Visited Countries : {visitedCountries.length} </h3>
-                <ol>
+                
                 {
                     visitedCountries.map(country=><li key={country.cca3}>{country.name.common}</li>)
                 }
-                </ol>
+                
             </div>
             <div className="flag-Container">
                 {visitedFlags.map(flag =><img src={flag}></img>)}

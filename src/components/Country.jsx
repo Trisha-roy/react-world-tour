@@ -14,7 +14,7 @@ const Country = ({country,handleVisitedCountires,handleVisitedFlags}) => {
     // }
     return (
         <div className={`country ${visited && 'visited'}`}>
-            <h3>Name : {name.common}</h3>
+            <h3> {name.common}</h3>
             <img src={flags.png}></img>
             <p>Population: {population}</p>
             <p>Area : {area}</p>
